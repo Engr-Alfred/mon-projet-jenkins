@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage("Build") {
+        stage('Build') {
             steps {
-                sh "echo Bonjour le monde !"
+                bat 'mvn clean install'
             }
         }
     }
